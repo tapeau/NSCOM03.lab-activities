@@ -22,5 +22,6 @@ plt.ylabel('Extra Bits per Second')
 plt.title('Extra Bits per Second vs Receiver Clock Speed Difference')
 plt.legend()
 plt.grid(True)
-
+plt.xlim(0, 0.1)
+plt.ylim(0, 1000)
 plt.show()

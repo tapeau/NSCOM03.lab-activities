@@ -3,9 +3,7 @@ import numpy as np
 
 def unipolar_line_encoding(bit_sequence):
     bits = [int(bit) for bit in bit_sequence]
-    
     time = np.arange(len(bits))
-    
     signal = np.array(bits)
     
     return time, signal
@@ -18,6 +16,8 @@ def plot_unipolar_encoding(ax, bit_sequence, title):
     ax.set_xlabel('Time')
     ax.set_ylabel('Amplitude')
     ax.set_yticks([0, 1])
+    ax.set_xlim(0, max(time))
+    ax.set_ylim(0, 1.004)
     ax.grid(True)
 
 bit_sequence1 = "10110001"

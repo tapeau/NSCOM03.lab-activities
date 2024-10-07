@@ -21,12 +21,12 @@ for i, bit in enumerate(bit_sequence):
 
 plt.figure(figsize=(10, 4))
 plt.plot(time, signal, drawstyle='steps-post')
-
 plt.axhline(0, color='red', linestyle='--')
 
 plt.title('Polar RZ Encoding')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
 plt.grid(True)
-plt.ylim(-1.5, 1.5)
+plt.xlim(0, 5)
+plt.ylim(-1, 1.006)
 plt.show()

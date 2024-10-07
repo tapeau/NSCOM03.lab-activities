@@ -23,6 +23,8 @@ def plot_signal(bit_sequence, signal):
     plt.ylabel("Amplitude")
     plt.yticks([-1, 0, 1])
     plt.grid(True)
+    plt.xlim(0, 6)
+    plt.ylim(-1.004, 1.004)
     plt.show()
 
 bit_sequence = "0100100"

@@ -26,6 +26,7 @@ plt.title('Polar Non-Return-to-Zero (NRZ) Line Coding Scheme')
 plt.xlabel('Time')
 plt.ylabel('Voltage')
 plt.legend()
-
 plt.grid(True)
+plt.xlim(0, 8)
+plt.ylim(-1.008, 1.008)
 plt.show()

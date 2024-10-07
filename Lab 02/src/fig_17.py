@@ -23,6 +23,7 @@ plt.xlabel("Time", fontsize=12)
 plt.ylabel("Amplitude", fontsize=12)
 plt.legend(loc="upper right", fontsize=10)
 plt.grid(True)
-
 plt.tight_layout()
+plt.xlim(-0.004, 1.004)
+plt.ylim(-1.004, 1.004)
 plt.show()

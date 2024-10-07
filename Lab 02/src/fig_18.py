@@ -27,6 +27,8 @@ plt.plot(t_nyquist, sampled_nyquist, 'ro-', label='Sampled at Nyquist Rate (fs =
 plt.title('Nyquist Rate Sampling')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.xlim(0, 3)
+plt.ylim(-1.004, 1.004)
 plt.legend()
 
 plt.subplot(3, 1, 2)
@@ -35,6 +37,8 @@ plt.plot(t_oversample, sampled_oversample, 'go-', label='Sampled at Oversampling
 plt.title('Oversampling')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.xlim(0, 3)
+plt.ylim(-1.004, 1.004)
 plt.legend()
 
 plt.subplot(3, 1, 3)
@@ -43,6 +47,8 @@ plt.plot(t_undersample, sampled_undersample, 'bo-', label='Sampled at Undersampl
 plt.title('Undersampling')
 plt.xlabel('Time')
 plt.ylabel('Amplitude')
+plt.xlim(0, 3)
+plt.ylim(-1.004, 1.004)
 plt.legend()
 
 plt.tight_layout()
